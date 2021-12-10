@@ -7,61 +7,54 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this bug report! We will respond as fast as we can. Don't forget to check
+        if your issue might be a duplicate.
 
   - type: textarea
     id: what-happened
     attributes:
-      label: What went wrong?
-      description: A clear and concise description of what the bug is.
+      label: 'What went wrong?'
+      description: 'A clear and concise description of what the bug is.'
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: Reproduction steps
-      description: Steps to reproduce this behavior
+      label: 'Reproduction steps'
+      description: 'Steps to reproduce this behavior'
     validations:
       required: true
 
   - type: input
     id: version
     attributes:
-      label: Module version
-      description: What version of our software are you using?
+      label: 'Module version'
+      description: 'What version of our software are you using?'
     validations:
       required: true
 
-
-  - type: dropdown
+  - type: input
     id: ps-version
     attributes:
-      label: PrestaShop version
-      description: What version of PrestaShop are you using?
-      options:
-        - 1.7.0
-        - 1.7.1
-        - 1.7.2
-        - 1.7.3
-        - 1.7.4
-        - 1.7.5
-        - 1.7.6
-        - 1.7.7
-        - 1.7.8
+      label: 'PrestaShop version'
+      description: 'What version of PrestaShop are you using?'
+      placeholder: '1.7.x.x'
     validations:
       required: true
 
   - type: input
     id: php-version
     attributes:
-      placeholder: '7.2'
-      label: PHP version
-      description: What version of PHP are you using?
+      placeholder: '8.0'
+      label: 'PHP version'
+      description: 'What version of PHP are you using?'
+    validations:
+      required: true
 
   - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output.
+      label: 'Relevant log output'
+      description: 'Please copy and paste any relevant log output.'
       render: shell
